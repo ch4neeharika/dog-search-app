@@ -1,7 +1,7 @@
 # Project Overview
 #  Dog Search App
 
- # * Fetch Your Paw-fect Match! *
+ #  Fetch Your Paw-fect Match! 
 
 A user-friendly *React application* that allows users to search for adoptable dogs by breed, location, and sorting preferences, add them to favorites, and find their best match! The application is built with *React & Vite* and deployed using *GitHub Pages*.
 
