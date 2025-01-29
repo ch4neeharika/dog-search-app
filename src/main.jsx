@@ -7,7 +7,7 @@ import SearchPage from "./pages/SearchPage";
 ReactDOM.createRoot(document.getElementById("root")).render(
     <BrowserRouter>
         <Routes>
-            <Route path="/" element={<LoginPage />} />
+            <Route path="/dog-search-app" element={<LoginPage />} />
             <Route path="/search" element={<SearchPage />} />
         </Routes>
     </BrowserRouter>
