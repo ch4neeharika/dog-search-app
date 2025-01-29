@@ -22,7 +22,7 @@ const LoginPage = () => {
             );
 
             localStorage.setItem("user", JSON.stringify({ name, email }));
-            navigate("/search"); // Redirect on success
+            navigate("/search"); 
         } catch (error) {
             console.error("Login failed:", error.response?.data || error);
             alert(`Login failed: ${error.response?.data?.message || "Check API request format."}`);
@@ -48,7 +48,7 @@ const LoginPage = () => {
                 maxWidth: "400px",
                 width: "100%"
             }}>
-                {/* Title and Subtitle */}
+                
                 <h1 style={{ 
                     fontSize: "2.5rem", 
                     color: "#ff6f61", 
@@ -64,7 +64,7 @@ const LoginPage = () => {
                     Login to find your perfect dog match!
                 </p>
 
-                {/* Login Form */}
+               
                 <form onSubmit={handleLogin} style={{ width: "100%" }}>
                     <input
                         type="text"
@@ -125,7 +125,7 @@ const LoginPage = () => {
                     </button>
                 </form>
 
-                {/* Fun Dog Illustration */}
+            
                 <div style={{ marginTop: "30px" }}>
                     <img 
                         src="https://img.icons8.com/color/96/000000/dog.png" 

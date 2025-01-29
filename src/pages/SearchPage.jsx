@@ -67,7 +67,7 @@ const SearchPage = () => {
     }, []);
     
 
-    // Fetch breeds on component mount
+    // Fetch breeds initially
     useEffect(() => {
         fetchBreeds();
     }, []);
@@ -195,7 +195,7 @@ const SearchPage = () => {
         }
     };
 
-    // Toggle favorite dogs
+
     const toggleFavorite = (dog) => {
         setFavorites((prev) =>
             prev.some((fav) => fav.id === dog.id)
@@ -204,7 +204,7 @@ const SearchPage = () => {
         );
     };
 
-    // Find a match from favorites
+
     const findMatch = async () => {
         if (favorites.length === 0) {
             alert("Please select at least one favorite dog.");
@@ -241,7 +241,6 @@ const SearchPage = () => {
         }
     };
 
-    // Handle logout
     const handleLogout = async () => {
         try {
             await axios.post("https://frontend-take-home-service.fetch.com/auth/logout", {}, { withCredentials: true });
