@@ -1,5 +1,3 @@
-# React + Vite
-
 # Project Overview
 #  Dog Search App
 
